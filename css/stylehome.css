@@ -310,3 +310,6 @@ footer div{
     background:linear-gradient(135deg,green,yellow,green);
     color: black;
 }
+#booknow:hover{
+    cursor: pointer;
+}
