@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styleAssign3.css" type="text/css">
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="./site.webmanifest">
+        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="./build/css/demo.css">
+        <link rel="stylesheet" href="./build/css/intlTelInput.css">
+        <title>Details</title>
+    </head>
+<!-- <body background="./pictures/bg.jpeg"> -->
+    <body>
+    <header>
+        <div class="container">
+            <a href="./home.html"><img src="./icon.png" id="logo_img" alt="logo image"><h1 id="name">TURTLES life</h1></a>
+        </div>
+        <div class="pgtitle">
+            <h1 id="pgtitle">BUY TICKETS</h1>
+        </div>
+        <div class="navbar">
+            <ul class="navigation">
+                <li><a href="./hikkaduwa.html" id="hikkaduwalink">Hikkaduwa></a></li>
+                <li>Tickets></li>
+                <li>Details></li>
+                <li>Payment></li>
+                <li>Confirm></li>
+            </ul>
+        </div>
+        
+    </header>
+
+<div class="maincontainer">
+    <div class="leftcontainer">
+
+        <article id="detailsguests">
+            <form id="detailsForm">
+                <h1>Enter your details</h1>
+                <!-- <p>
+                    <label for="name">Full name</label><br>
+                    <input type="text" id="fullname" class="name" required class="detailInputs">
+                    <div id="error1"></div>
+                </p>
+                <p>
+                    <label for="mobile">Mobile number</label><br>
+                    <input type="tel" id="mobile" class="mobile" required class="detailInputs">
+                    <div class="error"></div>
+                </p>
+                <p>
+                    <label for="email">Email</label> <br>
+                    <input type="email" id="email" class="email" required class="detailInputs">
+                    <div class="error"></div>
+                </p>
+                <p>
+                    <label for="cemail">Confirm Email</label><br>
+                   <input type="email" id="cemail" class="email" required class="detailInputs">
+                   <div class="error"></div>
+                </p>
+                <p>
+                    <label for="usergender">Gender</label><br>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </p> -->
+
+                <div class="container">
+                    <form id="form" action="/">
+                        <div class="input-control">
+                            <label for="fullname">Full name :</label>
+                            <input id="fullname" name="fullname" type="text" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <label for="email">Email :</label>
+                            <input id="email" name="email" type="text" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <label for="cemail">Confirm Email :</label>
+                            <input id="cemail" name="cemail" type="email" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <label for="mobile">Mobile :</label>
+                            <input type="text" name="" id="countrycodewithflag" value="mobile_number" required>
+                            <input id="mobile" name="mobile" type="tel">
+                            <div class="error"></div>
+                        </div>
+                        <label for="usergender">Gender</label><br>
+                            <select name="gender" id="gender">
+                                 <option value="male">Male</option>
+                                 <option value="female">Female</option>
+                            </select>
+                    </form>
+                </div>
+                
+            </form>
+        </article>
+
+    </div>
+
+    <div class="rightcontainer">
+        <article>
+            <table id="summaryTable">
+                <tr>
+                    <td>Date</td>
+                    <td id="pickedDate">current date</td>
+                </tr>
+                <tr >
+                    <td>Time</td>
+                    <td>7to8</td>
+                </tr>
+                <tr>
+                    <td>Duration</td>
+                    <td>1hrs(01 Normal:00 Peak)</td>
+                </tr>
+                <tr class="diffTr">
+                    <td>Tickets</td>
+                    <td>Charges</td>
+                </tr>
+                <tr>
+                    <td>1 foreign adult</td>
+                    <td>$10</td>
+                </tr>
+                <tr class="diffTr">
+                    <td>Total payable</td>
+                    <td>$10</td>
+                </tr>
+            </table>
+        </article>
+        <article id="btnart">
+            <!-- <a href="./payment.html">-->
+                <button type="submit" class="continue" id="btndetails" disabled >Continue with purchase</button> 
+        </article>
+    </div>
+</div>
+<footer>       
+    <div>   
+        <p>Software & Web by LD production</p>
+        <p>Info.Support.Marketing</p>
+        <p>Terms of Service.Privacy policy</p>
+    </div>
+</footer>
+
+<script src="./build/js/intlTelInput.js"></script>
+<script>
+    var input = document.querySelector("#countrycodewithflag");
+    window.intlTelInput(input,{});
+</script>
+
+<script src="./javascriptANDjson/detail.js"></script>
+</body>
+</html>

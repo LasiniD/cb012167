@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styleAssign3.css" type="text/css">
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="./site.webmanifest">
+        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <title>Payment</title>
+    </head>
+<body >
+    <header>
+        
+        <div class="container">
+            <a href="./home.html"><img src="./icon.png" id="logo_img"><h1 id="name">TURTLES life</h1></a>
+        </div>
+        <div class="pgtitle">
+            <h1 id="pgtitle">BUY TICKETS</h1>
+        </div>
+        <div class="navbar">
+            <ul class="navigation">
+                <li><a href="./hikkaduwa.html" id="hikkaduwalink">Hikkaduwa></a></li>
+                <li>Tickets></li>
+                <li>Details></li>
+                <li>Payment></li>
+                <li>Confirm></li>
+            </ul>
+        </div>
+        
+    </header>
+<div class="maincontainer">
+    <div class="leftcontainer">
+        
+        <article id="payment">
+            <form id="paymentForm">
+                
+                <div class="container">
+                    <form id="form" action="/">
+                        <h1>Payment Details:</h1>
+                        <div class="input-control">
+                            <label for="cardnumber">Card number</label>
+                            <input id="cardnumber" name="cardnumber" type="text">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <label for="expdate">Expiry date</label>
+                            <input id="expdate" name="expdate" type="text">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <label for="cvc">CVC/CVV</label>
+                            <input id="cvc" name="cvc" type="text">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <label for="nameoncard">Name on card</label>
+                            <input id="nameoncard" name="nameoncard" type="text">
+                            <div class="error"></div>
+                        </div>
+                        <article id="btnart">
+                            <a href="./confirm.html"><button class="continue" id="btnpayment" disabled>Pay amount</button></a>
+                        </article>
+                    </form>
+                </div>
+
+            </form>
+        </article>
+    </div>
+
+    <div class="rightcontainer">
+        <article>
+            <table id="summaryTable">
+                <tr>
+                    <td >Date</td>
+                    <td id="pickedDate">current date</td>
+                </tr>
+                <tr >
+                    <td>Time</td>
+                    <td >7to8</td>
+                </tr>
+                <tr>
+                    <td>Duration</td>
+                    <td>1hrs(01 Normal:00 Peak)</td>
+                </tr>
+                <tr class="diffTr">
+                    <td>Tickets</td>
+                    <td>Charges</td>
+                </tr>
+                <tr>
+                    <td>1 foreign adult</td>
+                    <td>$10</td>
+                </tr>
+                <tr class="diffTr">
+                    <td>Total payable</td>
+                    <td>$10</td>
+                </tr>
+            </table>
+        </article>
+    </div>
+</div>
+
+<footer>       
+    <div>   
+        <p>Software & Web by LD production</p>
+        <p>Info.Support.Marketing</p>
+        <p>Terms of Service.Privacy policy</p>
+    </div>
+</footer>
+
+<script src="./javascriptANDjson/payment.js"></script>
+</body>
+</html>

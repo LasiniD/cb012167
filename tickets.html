@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styleAssign3.css" type="text/css">
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="./site.webmanifest">
+        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <title>Tickets</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="./home.html"><img src="./icon.png" id="logo_img"><h1 id="name">TURTLES life</h1></a>
+        </div>
+        <div class="pgtitle">
+            <h1 id="pgtitle">BUY TICKETS</h1>
+        </div>
+        <div class="navbar">
+            <ul class="navigation">
+                <li><a href="./hikkaduwa.html" id="hikkaduwalink">Hikkaduwa></a></li>
+                <li>Tickets></li>
+                <li>Details></li>
+                <li>Payment></li>
+                <li>Confirm></li>
+            </ul>
+        </div>
+        
+    </header>
+<div class="maincontainer">
+    <div class="leftcontainer">
+        <article id="dates">
+            <form id="datesForm">
+                <h1>Dates</h1>
+                <p>WHEN ARE YOU COMING?</p>
+                <div class="calendar">
+                    <div class="month">
+                      <span class="prev">&#10094;</span>
+                      <span class="next">&#10095;</span>
+                      <h2 id="currentMonth"></h2>
+                    </div>
+                    <div class="weekdays">
+                      <div>Sun</div>
+                      <div>Mon</div>
+                      <div>Tue</div>
+                      <div>Wed</div>
+                      <div>Thu</div>
+                      <div>Fri</div>
+                      <div>Sat</div>
+                    </div>
+                    <div class="days" id="calendarDays"></div>
+                  </div>            </form>
+        </article>
+
+        <article id="guests">
+            <!-- <form id="guestsForm"> -->
+            <div id="guestsForm">
+                <h1>Guests</h1>
+                <p>SELECT YOUR TICKETS!</p>
+                <table class="ticketinfo">
+                    <tr>
+                        <td rowspan="4">Normal Hour</td>
+                        <td>Foreigner Adult(Above 18)</td>
+                        <td>10USD</td>
+                    </tr>
+                    <tr>
+                        <td>Foreigner Child</td>
+                        <td>5USD</td>
+                    </tr>
+                    <tr>
+                        <td>SL Adult(Above 18)</td>
+                        <td>4USD</td>
+                    </tr>
+                    <tr>
+                        <td>SL Child</td>
+                        <td>2USD</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">Peak Hour</td>
+                        <td>Foreigner Adult(Above 18)</td>
+                        <td>13USD</td>
+                    </tr>
+                    <tr>
+                        <td>Foreigner Child</td>
+                        <td>8USD</td>
+                    </tr>
+                    <tr>
+                        <td>SL Adult(Above 18)</td>
+                        <td>6USD</td>
+                    </tr>
+                    <tr>
+                        <td>SL Child</td>
+                        <td>3USD</td>
+                    </tr>
+                    <tr>
+                        <td>Normal or Peak hour</td>
+                        <td>Infant (Under 4 years)</td>
+                        <td>Free</td>
+                    </tr>
+                </table>
+                <div>
+                    <div class="ticketType">
+                        <div class="ticketName">
+                            <p>
+                                <label for="foreignerA">Foreigner Adult</label>
+                            </p>
+                        </div>
+                        <div class="ticketButtons">
+                            <button class="btnminus">-</button>
+                            <span class="ticketsCount" id="FAcount">1</span>
+                            <button class="btnplus">+</button>
+                        </div>
+                    </div>
+                    <div class="ticketType">
+                        <div class="ticketName">
+                            <p>
+                                <label for="foreignerC">Foreigner Child</label>
+                            </p>
+                        </div>
+                        <div class="ticketButtons">
+                            <button class="btnminus">-</button>
+                            <span class="ticketsCount" id="FCcount">0</span>
+                            <button class="btnplus">+</button>
+                        </div>
+                    <div class="ticketType">
+                        <div class="ticketName">
+                            <p>
+                                <label for="slAdult">SL Adult</label>
+                            </p>
+                        </div>
+                        <div class="ticketButtons">
+                            <button class="btnminus">-</button>
+                            <span class="ticketsCount" id="SLAcount">0</span>
+                            <button class="btnplus">+</button>
+                        </div>
+                    </div>
+                    <div class="ticketType">
+                        <div class="ticketName">
+                            <p>
+                                <label for="slChild">SL Child</label>
+                            </p>
+                        </div>
+                        <div class="ticketButtons">
+                            <button class="btnminus">-</button>
+                            <span class="ticketsCount" id="SLCcount">0</span>
+                            <button class="btnplus">+</button>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <div class="ticketType">
+                        <div class="ticketName">
+                            <p>
+                                <label for="infant">Infant</label>
+                            </p>
+                        </div>
+                        <div class="ticketButtons">
+                            <button class="btnminus">-</button>
+                            <span class="ticketsCount" id="Icount">0</span>
+                            <button class="btnplus">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- </form> -->
+        </article>
+
+        <article id="duration">
+            <form id="durationForm">
+                <h1>Duration</h1>
+                <p>PICK YOUR TIME SLOTS...</p>
+                <label for="time">Time slots:</label>
+                <br>
+                <p>(use Ctrl+select to select multiple options from different places or drag and select your time slots)</p>
+                <br>
+                <select name="timehour" id="timehour" multiple>
+                    <option value="07to08" class="slot">07.00am-08.00am</option>
+                    <option value="08to09" class="slot">08.00am-09.00am</option>
+                    <option value="09to10" class="slot">09.00am-10.00am</option>
+                    <option value="10to11" class="slot" id="peakH">10.00am-11.00am(Peak)</option>
+                    <option value="11to12" class="slot" id="peakH">11.00am-12.00am(Peak)</option>
+                    <option value="12to01" class="slot" id="peakH">12.00am-01.00pm(Peak)</option>
+                    <option value="01to02" class="slot">01.00pm-02.00pm</option>
+                    <option value="02to03" class="slot">02.00pm-03.00pm</option>
+                    <option value="03to04" class="slot" id="peakH">03.00pm-04.00pm(Peak)</option>
+                    <option value="04to05" class="slot" id="peakH">04.00pm-05.00pm(Peak)</option>
+                    <option value="05to06" class="slot" id="peakH">05.00pm-06.00pm(Peak)</option>
+                </select>
+            </form>
+        </article>
+    </div>
+
+    <div class="rightcontainer">
+        <article>
+            <table id="summaryTable">
+                <tr>
+                    <td >Date</td>
+                    <td id="pickedDate" >current date</td>
+                </tr>
+                <tr >
+                    <td >Time</td>
+                    <td id="timeValue">07.00am -08.00am</td>
+                </tr>
+                <tr>
+                    <td >Duration</td>
+                    <td id="durationValue">1hrs(01 Normal:00 Peak)</td>
+                </tr>
+                <tr class="diffTr">
+                    <td>Tickets</td>
+                    <td>Charges</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="test">1 </div><span>Foreigner Adult</span>
+                    </td>
+                    <td id="chargeCell">$10</td>
+                </tr>
+                <tr class="diffTr">
+                    <td>Total payable</td>
+                    <td id="totalpayable">$10</td>
+                </tr>
+            </table>
+        </article>
+        <article id="btnart">
+            <a href="./details.html"><button class="continue" id="btntickets" disabled>Continue with purchase</button></a>
+            
+        </article>
+    </div>
+</div>
+<footer>       
+    <div>   
+        <p>Software & Web by LD production</p>
+        <p>Info.Support.Marketing</p>
+        <p>Terms of Service.Privacy policy</p>
+    </div>
+</footer>
+
+<script src="./javascriptANDjson/main.js"></script>
+</body>
+</html>

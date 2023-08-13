@@ -1,0 +1,312 @@
+
+/*importing fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Amatic+SC|Rubik+Pixels ');
+
+:root{  /*using variables*/
+    --ash:rgb(214, 214, 214);
+    --w:white;
+    --round_corner:25px;
+}
+
+*{       /*applying styles to the whole website*/
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color:var(--ash);
+}
+header{
+    font-family:"Roboto Condensed" ;
+    display: inline-block;
+    background-color: rgb(83, 83, 83);
+    width: 100%;
+}
+.navbar{
+    text-decoration: none;
+    color: var(--w);
+    font-size: 20px;
+    padding: 7px;
+}
+#name{
+    float: left;
+    font-size: 2.5em;
+    font-family:"Amatic SC";
+    color: var(--w);
+    padding: 7px;
+}
+#logo_img{
+    height: 50px;
+}
+#container{
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+    margin: 0%;
+    width:100%;
+    background-color: rgb(0, 0, 0);
+}
+#vid1{
+    width: 100%;
+}
+#searchbar{
+    padding: 10px;
+    float: right;
+    display:inline;
+    text-align: center;
+}
+#topnav{
+    padding: 10px;
+    float: right;
+    display:inline;
+    text-align: center;
+    font-family:"Roboto Condensed";
+    color: var(--w);
+}
+#topnav a:hover{
+    background-color: rgb(52, 159, 125);
+    color: var(--w);
+    border-radius: 25px;
+}
+#topnav a:visited{
+    color: rgb(166, 200, 164);
+}
+#mainimg{
+    width: 100%;
+}
+.pic{
+    float: left;
+    width: 40%;
+    margin: 10px;
+    border-radius:var(--round_corner);
+    border: 4px; 
+    border-style: solid; 
+    border-color: var(--w);
+}
+.cat_iframe{
+    border: 0;
+    width: 600px;
+    height: 450px;
+}
+.division2{
+    display:flex;
+    overflow-x: auto;
+    
+}
+#othert{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+/* reffering to a child element inside a parent element*/
+#othert h2{
+    text-align: center;
+}
+#othert img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: var(--round_corner);
+}
+.linkphoto:hover{
+    opacity: 0.5;
+}
+
+.pic2{
+    margin: 5px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.pic2:hover{
+    border: 2px solid black;
+    
+}
+/*using media queries to make the website responsive*/
+@media screen and (max-width:1200px) {
+    #topnav{display: flex; flex-direction: column; width: 100%; background-color: rgba(23, 84, 41, 0.977); border-color: black; margin: 0%;}
+    .pic{width: 100%;}
+    .cat_iframe{width: 100%; height: 250px;}
+}
+#searchbar{
+    float:right;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: var(--round_corner);
+}
+#picpara{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 0;
+    margin-bottom: 3px;
+    background-color: rgb(241, 241, 241);
+}
+body article div{
+    margin: 30px;
+    margin-left: 16%;
+    margin-right: 16%;
+}
+/*applying css styles to multiple elements*/
+h1,h2{
+    font-family: "Roboto Condensed";
+}
+h1{
+    font-size: 28px;
+}
+#intro{
+    padding: 40px;
+}
+.division{
+    display:inline-block;
+}
+iframe{
+    width: 100%;
+}
+ul, ol{
+    margin: 10px;
+    padding: 10px;
+}
+ol li{
+    margin-left: 40px;
+}
+/*table decorations*/
+table, th, td{
+    border-bottom: 1px solid;
+    width: 100%;
+    border-collapse: collapse; /*to make a single border without having double lines*/
+    padding: 7px;
+   
+}
+th{
+    height: 50px;
+    background-color: rgb(206, 255, 239);
+}
+tr:hover{
+    background-color: rgb(148, 249, 180);
+}
+.linkphoto{
+    width: 50%;
+}
+#form{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin: 50px;
+    border-radius: var(--round_corner);
+    background-color: rgb(63, 163, 165);
+}
+.form_items{
+    margin: 7px;
+}
+.form_btn{
+    border-radius: var(--round_corner);
+    padding: 7px;
+}
+.purchase_btn{
+    border-radius: var(--round_corner);
+    padding: 8px;
+    background-color: aquamarine;
+}
+#gallery{
+    background-color: rgb(32, 78, 72);
+    color: azure;
+    display: flex;
+    height: 100%;
+}
+.gallery{
+    margin: 5px;
+    border: 1px solid var(--w);
+    float: left;
+    width: 180px;
+    
+}
+.gallery:hover{
+    border: 1px solid black;
+}
+.gallery img{
+    width: 100%;
+    height:30%;
+    object-fit: cover;
+}
+.desc,.purchase_div, .price{
+    padding: 5px;
+    text-align: center;
+}
+.purchase_btn:hover{
+    padding: 10px;
+    opacity: 0.6;
+}
+@media screen and (max-width:1000px){
+    .gallery{ width: 80%; height: 80%;}
+    .gallery img{width: 100%; display: flex; flex-direction: row;}
+    #gallery{display: grid; grid-template-columns: 50% 50%; justify-items: center; width: 100%; height: fit-content;}
+    #form{padding: 5%;}
+}
+@media screen and (max-width:400px) {
+    body article div{margin-left: 7%; margin-right: 7%;}
+}
+
+#gototop{   /*Animation for go to top button*/
+    background-color:aquamarine ;
+    animation-name: x;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-decoration:none;
+    color: black;
+}
+@keyframes x{
+    0%{background-color: aquamarine;}
+    25%{background-color: aqua;}
+    50%{background-color: rgb(160, 104, 212);}
+    75%{background-color: rgb(108, 108, 200);}
+    100%{background-color: cadetblue;}
+}
+
+#gototop{
+    padding: 15px;
+    border-radius: var(--round_corner);
+    position: fixed;
+    bottom: 0%;
+    margin: 7px;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    color: var(--w);
+    margin-bottom: 0%;
+}
+footer div{
+    padding: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+#pgtitle{
+    font-size: 35px;
+    color: var(--w);
+    transition: font-size 1s;
+}
+#pgtitle:hover{
+    font-size: 50px;
+}
+#hikkaduwabeach{
+    width: 100%;
+    border: 5px;
+    border-style: solid;
+    border-radius: var(--round_corner);
+    border-color:var(--ash);
+}
+#otherlink{
+    margin-bottom: 0;
+}
+
+/*------------------------Assignment 3-----------------------*/
+
+#booknow{
+    padding: 10px;
+    width: 100%;
+    margin: 10px;
+    border-radius: var(--round_corner);
+    background:linear-gradient(135deg,green,yellow,green);
+    color: black;
+}
