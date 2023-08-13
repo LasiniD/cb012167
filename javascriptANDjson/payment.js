@@ -107,7 +107,7 @@ const validateCvcNum=()=>{
     const cvcNumType = /^[0-9]+$/;
 
     if(cvcNumValue === '') {
-        setError(cvcNum, 'Mobile number is required');
+        setError(cvcNum, 'CVC/CVV number is required');
     }else if(!cvcNumType.test(cvcNumValue)){
         setError(cvcNum,'Invalid CVC/CVV')
     }
