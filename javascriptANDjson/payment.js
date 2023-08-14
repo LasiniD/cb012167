@@ -112,7 +112,7 @@ const validateCvcNum=()=>{
         setError(cvcNum,'Invalid CVC/CVV')
     }
     else if (cvcNumValue.length !== 3 ) {
-        setError(cvcNum, 'CVC/CVV must have at 3 characters');
+        setError(cvcNum, 'CVC/CVV must have 3 characters');
     } else {
         setSuccess(cvcNum);
     }
